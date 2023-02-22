@@ -1,2 +1,8 @@
 @import './utils/typography.css';
 @import './utils/colors.css';
+
+@import './global/global.css';
+@import './utils/components.css';
+
+@import './global/header.css';
+@import './home/banner.css';

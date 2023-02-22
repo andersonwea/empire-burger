@@ -1,0 +1,30 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn {
+  cursor: pointer;
+  background: var(--yellow);
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+  border: none;
+}
+
+.btn.whats {
+  display: flex;
+  align-items: center;
+}
+
+.btn.whats::before {
+  content: "";
+  background: url('../../assets/icons/whatsapp-b.svg');
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  margin-right: 8px;
+}

@@ -1,0 +1,4 @@
+.banner-bg img {
+  object-fit: cover;
+  min-height: 515px;
+}
