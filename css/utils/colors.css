@@ -1,0 +1,38 @@
+:root {
+  --red: #f43127;
+  --yellow: #f59a1b;
+  --beige: #fae2cb;
+  --brown: #3b200b;
+  --title-black-38: rgba(29, 6, 5, 0.4);
+  --title-black-87: #34201f;
+  --title-black-60: #635352;
+}
+
+.color-red {
+  color: var(--red);
+}
+
+.color-yellow {
+  color: var(--yellow);
+}
+
+.color-beige {
+  color: var(--beige);
+}
+
+.color-brown {
+  color: var(--brown);
+}
+
+.title-black-38 {
+  color: var(--title-black-38);
+}
+
+.title-black-87 {
+  color: var(--title-black-87);
+}
+
+.title-black-60 {
+  color: var(--title-black-60);
+}
+

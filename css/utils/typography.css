@@ -1,0 +1,31 @@
+.h1-32 {
+  font: 400 2rem/1.1 "Lilita One", cursive;
+}
+
+.h2-25 {
+  font: 400 1.56rem/1.1 "Lilita One", cursive;
+}
+
+.h3-20 {
+  font: 400 1.25rem/1.1 "Lilita One", cursive;
+}
+
+.h4-18 {
+  font: 400 1.12rem/1.4 "Lilita One", cursive;
+}
+
+.t-18 {
+  font: 400 1.12rem/1.4 "Lato", sans-serif;
+}
+
+.t-16 {
+  font: 400 1rem/1.4 "Lato", sans-serif;
+}
+
+.t-14 {
+  font: 400 0.875rem/1.4 "Lato", sans-serif;
+}
+
+.t-12 {
+  font: 400 0.75rem/1.4 "Lato", sans-serif;
+}
