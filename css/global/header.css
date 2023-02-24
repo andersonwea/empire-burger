@@ -3,6 +3,7 @@
   background: rgba(59, 32, 11, 0.05);
   position: fixed;
   backdrop-filter: blur(10px);
+  z-index: 999;
 }
 
 .header {
@@ -21,7 +22,7 @@
   transition: all .3s ease;
 }
 
-.header-menu a:hover {
+.header-menu nav a:hover {
   color: var(--title-black-87);
   font-weight: 700;
 }
@@ -29,6 +30,7 @@
 .header-menu {
   display: grid;
   grid-template-columns: 1fr auto;
+  align-items: center;
   width: 100%;
 }
 

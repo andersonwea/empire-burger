@@ -28,3 +28,16 @@
   display: inline-block;
   margin-right: 8px;
 }
+
+.btn.second {
+  background: var(--red);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .btn.second {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
