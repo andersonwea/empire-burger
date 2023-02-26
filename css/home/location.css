@@ -11,3 +11,15 @@
 .location > p {
   margin-bottom: 32px;
 }
+
+@media (max-width: 800px) {
+  .location {
+    padding-top: 64px;
+  }
+}
+
+@media (max-width: 600px) {
+  .location > h1 {
+    font-size: 1.56rem;
+  }
+}

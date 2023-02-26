@@ -68,10 +68,6 @@
 
 @media (max-width: 800px) {
   .differentials {
-    max-width: 360px;
-  }
-
-  .differentials {
     display: grid;
     grid-template-columns: 1fr;
   }

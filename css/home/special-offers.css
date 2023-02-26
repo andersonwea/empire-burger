@@ -79,6 +79,10 @@
 }
 
 @media (max-width: 600px) {
+  .special-offers-grid h1 {
+    font-size: 1.56rem;
+  }
+
   .special-offers-grid h2 {
     font-size: 1.25rem;
   }
