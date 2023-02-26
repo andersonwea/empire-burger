@@ -1,5 +1,5 @@
 #differentials {
-  background: rgba(250, 243, 242, 1);
+  background: var(--bg-color);
 }
 
 .differentials {

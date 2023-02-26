@@ -1,5 +1,5 @@
 .open-status-bg {
-  background:  rgba(250, 243, 242, 1);
+  background: var(--bg-color);
 }
 
 .open-status {

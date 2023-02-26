@@ -1,0 +1,13 @@
+.location {
+  padding-top: 100px;
+  text-align: center;
+  background: var(--bg-color);
+}
+
+.location > h1 {
+  text-transform: uppercase;
+}
+
+.location > p {
+  margin-bottom: 32px;
+}
