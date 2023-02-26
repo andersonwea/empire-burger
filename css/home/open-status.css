@@ -53,3 +53,10 @@
   font-weight: 700;
 }
 
+.open-status-instagram {
+  align-self: center;
+}
+
+.open-status-instagram > h2 {
+  text-transform: uppercase;
+}
