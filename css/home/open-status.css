@@ -64,3 +64,13 @@
 .open-status-instagram > h2 {
   text-transform: uppercase;
 }
+
+@media (max-width: 800px) {
+  .open-status {
+    grid-template-columns: 1fr;
+  }
+
+  .open-status-instagram {
+    justify-self: center;
+  }
+}
