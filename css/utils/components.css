@@ -13,6 +13,11 @@
   font-weight: bold;
   display: inline-block;
   border: none;
+  transition: filter 250ms ease;
+}
+
+.btn:hover {
+  filter: brightness(95%);
 }
 
 .btn.whats {
