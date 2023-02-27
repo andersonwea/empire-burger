@@ -1,6 +1,7 @@
 :root {
   --red: #f43127;
   --yellow: #f59a1b;
+  --beige-light: #FAE4D0;
   --beige: #fae2cb;
   --brown: #3b200b;
   --bg-color: #FAF3F2;
@@ -20,6 +21,10 @@
 
 .color-yellow {
   color: var(--yellow);
+}
+
+.color-beige-light {
+  color: var(--beige-light);
 }
 
 .color-beige {

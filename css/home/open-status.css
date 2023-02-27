@@ -1,5 +1,6 @@
 .open-status-bg {
   background: var(--bg-color);
+  padding-bottom: 64px;
 }
 
 .open-status {
