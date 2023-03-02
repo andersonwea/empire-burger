@@ -1,0 +1,25 @@
+.service {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+  padding-top: 72px;
+  padding-bottom: 128px;
+  border-bottom: 1px solid rgba(29, 6, 5, 0.15);
+}
+
+.service-info > h1 {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.service-info > h1 span {
+  background: var(--yellow);
+  padding: 0 5px;
+  border-radius: 4px;
+}
+
+.service-info > a {
+  margin-top: 32px;
+}
+
