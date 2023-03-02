@@ -1,3 +1,7 @@
+.footer {
+  background: #ffffff;
+}
+
 .footer-content {
   display: flex;
   align-items: center;
