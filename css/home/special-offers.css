@@ -38,6 +38,7 @@
 
 .special-offer-card > div img {
   transition: transform 250ms ease;
+  width: 100%;
 }
 
 .special-offer-card > div img:hover {
