@@ -39,13 +39,24 @@
   max-width: 100%;
 }
 
+.js [data-anime="scroll"] {
+  opacity: 0;
+  transform: translate3d(0, 60px, 0);
+  transition: 300ms ease;
+}
+
+.js [data-anime="scroll"].active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
 @media (max-width: 800px) {
   .service {
     grid-template-columns: 1fr;
     row-gap: 16px;
   }
 
-  .service::after{
+  .service::after {
     margin-top: 64px;
   }
 
@@ -64,4 +75,3 @@
     font-size: 1rem;
   }
 }
-
