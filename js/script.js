@@ -1,13 +1,5 @@
-const menuTitle = document.getElementById('menu-title');
-
-const changeTitle = () => {
-  if (window.innerWidth <= 600) {
-    menuTitle.innerHTML = 'nossa especialidade'
-  } else {
-    menuTitle.innerHTML = 'cardápio imperial | burger'
-  }
-}
+import changeTitle from "./modules/menu-title.js";
+import initScrollSmooth from "./modules/scroll-smooth.js";
 
 changeTitle();
-
-window.addEventListener('resize', changeTitle);
+initScrollSmooth();
