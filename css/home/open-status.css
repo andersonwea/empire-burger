@@ -16,6 +16,23 @@
   background: var(--red);
   border-radius: 10px;
   padding: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.open-status-content.open {
+  background: var(--green);
+}
+
+.open-status-content small {
+  background: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  font-weight: bold;
+  transform: rotate(-45deg);
+  top: 25px;
+  left: -35px;
+  padding: 5px 40px;
+  text-transform: uppercase;
 }
 
 .open-status-content > .timer-icon {
@@ -75,7 +92,7 @@
     font-weight: 400;
   }
 
-  .open-status-instagram  {
+  .open-status-instagram {
     text-align: center;
   }
 

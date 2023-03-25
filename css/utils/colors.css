@@ -1,18 +1,19 @@
 :root {
   --red: #f43127;
   --yellow: #f59a1b;
-  --beige-light: #FAE4D0;
+  --green: #22d527;
+  --beige-light: #fae4d0;
   --beige: #fae2cb;
   --brown: #3b200b;
-  --bg-color: #FAF3F2;
+  --bg-color: #faf3f2;
   --title-white-39: rgba(255, 255, 255, 0.69);
   --title-white-40: rgba(255, 255, 255, 0.9);
   --title-black-38: rgba(29, 6, 5, 0.4);
   --title-black-39: rgba(29, 6, 5, 0.69);
   --title-black-40: rgba(29, 6, 5, 0.9);
   --title-black-87: #34201f;
-  --title-black-88: #3A210B;
-  --title-black-60: #635352; 
+  --title-black-88: #3a210b;
+  --title-black-60: #635352;
 }
 
 .color-red {
