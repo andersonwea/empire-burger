@@ -1,5 +1,8 @@
 .feedback {
-  margin-top: 128px;
+  padding-top: 128px;
+  background: var(--bg-color);
+  overflow-x: hidden;
+  padding-bottom: 30px;
 }
 
 .feedback > h1 {
@@ -8,22 +11,45 @@
 
 .feedback > ul {
   display: flex;
-  margin-top: 16px;
+  gap: 8px;
+  position: relative;
+  padding: 12px 0;
+}
+
+.feedback > ul::after {
+  content: "";
+  display: block;
+  background: linear-gradient(
+    270deg,
+    var(--bg-color) 40%,
+    rgba(250, 243, 242, 0.2) 105%
+  );
+  width: 100px;
+  height: 110%;
+  z-index: 999;
+  position: absolute;
+  right: -20px;
+  top: -10px;
 }
 
 .feedback li {
-  flex: 0 0 370px;
+  flex: 1 0 320px;
   background: #fff;
   padding: 12px 20px 12px 12px;
   border-radius: 10px;
-  box-shadow: 0 4px 25px 0 rgba(60, 35, 1, 0.1);
+  box-shadow: 0px 4px 15px rgba(60, 35, 13, 0.1);
   display: grid;
   grid-template-columns: auto 1fr;
   grid-column-gap: 8px;
   align-items: center;
+  opacity: 0.6;
 }
 
-.feedback p {
+.feedback li.active {
+  opacity: 1;
+}
+
+.feedback li p {
   color: #1d0605b0;
   grid-column: 1 / -1;
   margin-bottom: 12px;
@@ -43,4 +69,17 @@
   height: 48px;
   border-radius: 50%;
   overflow: hidden;
+}
+
+@media (max-width: 700px) {
+  .feedback {
+    padding-top: 72px;
+  }
+
+  .feedback h1 {
+    font-size: 1.56rem;
+  }
+  .feedback > ul::after {
+    display: none;
+  }
 }
