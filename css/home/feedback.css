@@ -1,0 +1,46 @@
+.feedback {
+  margin-top: 128px;
+}
+
+.feedback > h1 {
+  text-transform: uppercase;
+}
+
+.feedback > ul {
+  display: flex;
+  margin-top: 16px;
+}
+
+.feedback li {
+  flex: 0 0 370px;
+  background: #fff;
+  padding: 12px 20px 12px 12px;
+  border-radius: 10px;
+  box-shadow: 0 4px 25px 0 rgba(60, 35, 1, 0.1);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 8px;
+  align-items: center;
+}
+
+.feedback p {
+  color: #1d0605b0;
+  grid-column: 1 / -1;
+  margin-bottom: 12px;
+}
+
+.user-details h4 {
+  line-height: 1;
+}
+
+.user-details span {
+  color: #1d0605b0;
+  line-height: 1;
+}
+
+.user-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+}
