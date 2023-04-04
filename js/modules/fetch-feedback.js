@@ -7,7 +7,6 @@ const userAge = document.querySelectorAll(".user-details span");
 const fetchFeedback = async (url) => {
   const data = await fetch(url);
   const dataJSON = await data.json();
-  console.log(dataJSON);
 
   dataJSON.forEach((item, index) => {
     userName[index].innerText = item.name;
