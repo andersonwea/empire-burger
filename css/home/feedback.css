@@ -54,6 +54,12 @@
   color: #1d0605b0;
   grid-column: 1 / -1;
   margin-bottom: 12px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+  text-overflow: ellipsis;
 }
 
 .user-details h4 {
