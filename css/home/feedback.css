@@ -16,7 +16,7 @@
   padding: 12px 0;
 }
 
-.slide-wrapper > ul::after {
+.slide-wrapper::after {
   content: "";
   display: block;
   background: linear-gradient(
@@ -25,11 +25,11 @@
     rgba(250, 243, 242, 0.2) 105%
   );
   width: 100px;
-  height: 110%;
+  height: 50%;
   z-index: 999;
   position: absolute;
   right: -20px;
-  top: -10px;
+  bottom: 27px;
 }
 
 .slide li {
@@ -80,7 +80,7 @@
   .feedback h1 {
     font-size: 1.56rem;
   }
-  .slide-wrapper > ul::after {
+  .slide-wrapper::after {
     display: none;
   }
 }
