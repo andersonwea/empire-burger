@@ -4,12 +4,14 @@ import initScrollAnimation from "./modules/scroll-animation.js";
 import initOpenStatus from "./modules/open-status.js";
 import { SlideNav } from "./modules/slide.js";
 import initFetchFeedback from "./modules/fetch-feedback.js";
+import initFetchMenu from "./modules/fetch-menu.js";
 
+initFetchFeedback();
+initFetchMenu();
 changeTitle();
 initScrollSmooth();
 initScrollAnimation();
 initOpenStatus();
-initFetchFeedback();
 
 const slide = new SlideNav(".slide-wrapper", ".slide");
 slide.init();
