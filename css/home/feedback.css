@@ -29,7 +29,7 @@
   z-index: 999;
   position: absolute;
   right: -20px;
-  bottom: 27px;
+  bottom: 50px;
 }
 
 .slide li {
@@ -70,6 +70,25 @@
   height: 48px;
   border-radius: 50%;
   overflow: hidden;
+}
+
+[data-control="slide"] {
+  overflow: hidden;
+  justify-content: center;
+}
+
+[data-control="slide"] li {
+  background: rgba(0, 0, 0, 0.5);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  text-indent: -999px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+[data-control="slide"] li.active {
+  background: #1d0605b0;
 }
 
 @media (max-width: 700px) {

@@ -74,28 +74,6 @@
   max-width: 50ch;
 }
 
-.js [data-anime="scroll-left"] {
-  opacity: 0;
-  transform: translate3d(-60px, 0, 0);
-  transition: 300ms ease;
-}
-
-.js [data-anime="scroll-left"].active {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-}
-
-.js [data-anime="scroll-right"] {
-  opacity: 0;
-  transform: translate3d(60px, 0, 0);
-  transition: 300ms ease;
-}
-
-.js [data-anime="scroll-right"].active {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-}
-
 @media (max-width: 1000px) {
   .content-menu {
     padding: 40px 15px;

@@ -4,6 +4,7 @@ class Slide {
     this.slide = document.querySelector(slide);
     this.activeClass = "active";
     this.dist = { finalPosition: 0, startX: 0, movement: 0 };
+    this.changeEvent = new Event("changeEvent");
   }
 
   transition(active) {
@@ -81,6 +82,7 @@ class Slide {
     this.slidesIndexNav(index);
     this.dist.finalPosition = activeSlide.position;
     this.changeActiveClass();
+    this.wrapper.dispatchEvent(this.changeEvent);
   }
 
   changeSlideOnEnd() {
@@ -123,4 +125,52 @@ class Slide {
   }
 }
 
-export { Slide };
+class SlideNav extends Slide {
+  constructor(wrapper, slide) {
+    super(wrapper, slide);
+    this.bindControlEvent();
+  }
+
+  createControl() {
+    const control = document.createElement("ul");
+    control.dataset.control = "slide";
+
+    this.slideArray.forEach((item, index) => {
+      control.innerHTML += `<li><a href="#slide${index + 1}">${
+        index + 1
+      }</a></li>`;
+    });
+    this.wrapper.appendChild(control);
+    return control;
+  }
+
+  eventControl(item, index) {
+    item.addEventListener("click", (event) => {
+      event.preventDefault();
+      this.changeSlide(index);
+    });
+    this.wrapper.addEventListener("changeEvent", this.activeControlItem);
+  }
+
+  activeControlItem() {
+    this.controlArray.forEach((item) =>
+      item.classList.remove(this.activeClass)
+    );
+    this.controlArray[this.index.active].classList.add(this.activeClass);
+  }
+
+  addControl() {
+    this.control = this.createControl();
+    this.controlArray = [...this.control.children];
+
+    this.activeControlItem();
+    this.controlArray.forEach(this.eventControl);
+  }
+
+  bindControlEvent() {
+    this.eventControl = this.eventControl.bind(this);
+    this.activeControlItem = this.activeControlItem.bind(this);
+  }
+}
+
+export { Slide, SlideNav };
