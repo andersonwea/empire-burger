@@ -72,7 +72,7 @@
   height: 3px;
   background: rgba(29, 6, 5, 0.9);
   border-radius: 6px;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in;
 }
 
 .menu-mobile.active i:nth-child(2) {

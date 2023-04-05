@@ -5,6 +5,7 @@ import initOpenStatus from "./modules/open-status.js";
 import { SlideNav } from "./modules/slide.js";
 import initFetchFeedback from "./modules/fetch-feedback.js";
 import initFetchMenu from "./modules/fetch-menu.js";
+import MobileMenu from "./modules/menu-mobile.js";
 
 initFetchFeedback();
 initFetchMenu();
@@ -12,6 +13,9 @@ changeTitle();
 initScrollSmooth();
 initScrollAnimation();
 initOpenStatus();
+
+const mobileMenu = new MobileMenu(".menu-mobile");
+mobileMenu.init();
 
 const slide = new SlideNav(".slide-wrapper", ".slide");
 slide.init();
