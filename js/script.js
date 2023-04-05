@@ -14,7 +14,7 @@ initScrollSmooth();
 initScrollAnimation();
 initOpenStatus();
 
-const mobileMenu = new MobileMenu(".button-menu-mobile");
+const mobileMenu = new MobileMenu(".button-menu-mobile", ".menu-mobile");
 mobileMenu.init();
 
 const slide = new SlideNav(".slide-wrapper", ".slide");

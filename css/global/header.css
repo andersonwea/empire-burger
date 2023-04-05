@@ -109,25 +109,24 @@
   padding: 30px;
 
   transform: translate3d(400px, 0, 0);
-  display: none;
-  transition: all 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 
 .menu-mobile.active {
   transform: translate3d(0, 0, 0);
-  display: initial;
 }
 
-.menu-mobile ul {
+.menu-mobile ul:first-child {
   display: grid;
   text-align: center;
   gap: 30px;
+  place-self: center;
 }
 
 .menu-mobile > .header-links {
   display: grid;
+  gap: 30px;
   grid-template-columns: 1fr 1fr;
-  place-self: end;
 }
 
 .menu-mobile > .header-links li:last-child {
@@ -156,14 +155,10 @@
   .button-menu-mobile {
     display: flex;
   }
+}
 
-  /* .header::after {
-    content: "";
-    background: url("../../assets/icons/menu.svg") no-repeat;
-    display: block;
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    place-self: end;
-  } */
+@media (max-width: 600px) {
+  .menu-mobile {
+    width: 50vw;
+  }
 }
