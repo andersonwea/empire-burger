@@ -50,7 +50,7 @@
   padding: 3px 0 3px 12px;
 }
 
-.menu-mobile {
+.button-menu-mobile {
   width: 32px;
   height: 32px;
   place-self: end;
@@ -67,7 +67,7 @@
   position: relative;
 }
 
-.menu-mobile i {
+.button-menu-mobile i {
   width: 100%;
   height: 3px;
   background: rgba(29, 6, 5, 0.9);
@@ -75,18 +75,18 @@
   transition: all 0.3s ease-in;
 }
 
-.menu-mobile.active i:nth-child(2) {
+.button-menu-mobile.active i:nth-child(2) {
   opacity: 0;
   display: none;
 }
 
-.menu-mobile.active i:nth-child(1) {
+.button-menu-mobile.active i:nth-child(1) {
   transform: rotate(45deg);
   position: absolute;
   width: 80%;
 }
 
-.menu-mobile.active i:nth-child(3) {
+.button-menu-mobile.active i:nth-child(3) {
   transform: rotate(-45deg);
   position: absolute;
   width: 80%;
@@ -102,7 +102,7 @@
     padding-bottom: 8px;
   }
 
-  .menu-mobile {
+  .button-menu-mobile {
     display: flex;
   }
 
