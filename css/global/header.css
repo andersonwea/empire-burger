@@ -3,7 +3,7 @@
   background: rgba(59, 32, 11, 0.05);
   position: fixed;
   backdrop-filter: blur(10px);
-  z-index: 999;
+  z-index: 400;
 }
 
 .header {
@@ -65,6 +65,7 @@
   background: rgba(29, 6, 5, 0.15);
   display: none;
   position: relative;
+  z-index: 3;
 }
 
 .button-menu-mobile i {
@@ -92,6 +93,56 @@
   width: 80%;
 }
 
+.menu-mobile {
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--bg-color);
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  align-items: start;
+  padding: 30px;
+
+  transform: translate3d(400px, 0, 0);
+  display: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu-mobile.active {
+  transform: translate3d(0, 0, 0);
+  display: initial;
+}
+
+.menu-mobile ul {
+  display: grid;
+  text-align: center;
+  gap: 30px;
+}
+
+.menu-mobile > .header-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-self: end;
+}
+
+.menu-mobile > .header-links li:last-child {
+  grid-column: 1 / -1;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+}
+
+.menu-mobile > .header-links li:nth-child(-n + 2) a {
+  width: max-content;
+  display: block;
+  margin: 0 auto;
+}
 @media (max-width: 1000px) {
   .header-menu {
     display: none;
