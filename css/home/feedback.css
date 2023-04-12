@@ -9,10 +9,13 @@
   text-transform: uppercase;
 }
 
+.slide-wrapper {
+  position: relative;
+}
+
 .slide-wrapper > ul {
   display: flex;
   gap: 8px;
-  position: relative;
   padding: 12px 0;
 }
 
@@ -25,11 +28,11 @@
     rgba(250, 243, 242, 0.2) 105%
   );
   width: 100px;
-  height: 50%;
+  height: 100%;
   z-index: 999;
   position: absolute;
   right: -20px;
-  bottom: 50px;
+  bottom: 0px;
 }
 
 .slide li {
