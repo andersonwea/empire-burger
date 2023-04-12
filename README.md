@@ -14,42 +14,18 @@ Para facilitar a codificação do projeto foi usado um protótipo do figma como 
 
 ## 🚀 Tecnologias
 
-- [Item 1](http://localhost:3000/)
-- [Item 2](http://localhost:3000/)
-- [Item 3](http://localhost:3000/)
+- HTML
+- CSS
+- JAVASCRIPT
 
-## 📝 Critérios de aceite
 
-- [ ] Criar as seguintes seções: Menu, Banner hero, Ofertas especiais, Onde fica o nosso castelo, Footer.
+## 🚀 Funcionalidades
 
-- [ ] Ao clicar em um item do menu, o usuário deverá ser levado para a seção correspondente.
+- O card Horário de funcionamento tem o estados aberto e fechado, o estado é alterado conforme o horário do navegador do usuário.
 
-- [ ] Na seção Ofertas especiais os elementos devem ser organizados com o uso da propriedade display:grid do css.
+- A lista do cardápio é buscada via api.
 
-- [ ] As informações do card da oferta(nome do prato e gramagem) devem estar no html, a única imagem deve ser a foto do prato com o preço.
+- A lista de depoimentos é buscada va api.
 
-- [ ] Na seção Onde fica o nosso castelo você deverá incorporar uma localização do google maps.
-
-### Nível Médio
-
-- [ ] Todos os requisitos do nivel fácil.
-
-- [ ] Criar as seguintes seções: Cardápio, Atendimento, Nossas entregas.
-
-- [ ] Na seção Cardápio os preços devem ser formatados com o método Intl.NumberFormat.
-
-- [ ] O card Horário de funcionamento deverá ter os estados aberto e fechado, o estado será alterado conforme o horário do navegador do usuário.
-
-### Nível Difícil
-
-- [ ] Todos os requisitos do nivel fácil e médio
-
-- [ ] Criar as seguintes seções: Nossa realeza, Publicações do instagram.
-
-- [ ] Buscar a lista de itens do cardápio via api.
-
-- [ ] Buscar a lista de depoimentos via api.
-
-- [ ] Na seção Nossa realeza os depoimentos deverão estar em um carrousel funcional.
-
-- [ ] O texto de cada depoimento deverá estar limitado em quatro linhas, você pode usar a propriedade clamp do css.
+## Confira o site
+[Link do Deploy](https://srandersondev.github.io/empire-burger/)
