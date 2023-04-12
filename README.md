@@ -26,3 +26,6 @@ Para facilitar a codificação do projeto foi usado um protótipo do figma como 
 - A lista do cardápio é buscada via api.
 
 - A lista de depoimentos é buscada va api.
+
+## Confira o site
+[Link do Deploy](https://srandersondev.github.io/empire-burger/)
