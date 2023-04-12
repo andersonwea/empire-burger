@@ -66,6 +66,10 @@
   width: 100%;
 }
 
+.instagram-animation:hover {
+  animation-play-state: paused;
+}
+
 .instagram-animation h3 {
   text-transform: uppercase;
   display: inline-flex;

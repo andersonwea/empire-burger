@@ -2,7 +2,7 @@ const initScrollAnimation = () => {
   const sections = document.querySelectorAll('[data-anime^="scroll"]');
 
   if (sections.length) {
-    const halfWindow = window.innerHeight * 0.6;
+    const halfWindow = window.innerHeight * 0.75;
 
     const animeScroll = () => {
       sections.forEach((section) => {

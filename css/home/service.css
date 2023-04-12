@@ -41,8 +41,8 @@
 
 .js [data-anime="scroll"] {
   opacity: 0;
-  transform: translate3d(0, 60px, 0);
-  transition: 300ms ease;
+  transform: translate3d(0, 100px, 0);
+  transition: 0.5s ease;
 }
 
 .js [data-anime="scroll"].active {
